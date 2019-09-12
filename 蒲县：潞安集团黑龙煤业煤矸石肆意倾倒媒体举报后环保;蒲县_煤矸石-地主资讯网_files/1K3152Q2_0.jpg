@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>页面已拦截</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+	<link id="favicon" rel="shortcut icon" type="image/x-icon" href="https://3gimg.qq.com/tele_safe/txwz_static_cssjs/img/lab/icon_fraud.png" />
+	<style type="text/css">
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: 'Microsoft YaHei', 'Helvetica Neue', Helvetica, STHeiTi, sans-serif;
+		}
+
+		/* ---------------- logo ----------------- */
+
+		.logo {
+			display: inline-block;
+			margin: 10px 0 0 6%;
+			width: 80px;
+			height: 81.92px;
+			background-image: url('/public/pic/logo.jpg');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			vertical-align: middle;
+		}
+
+		/* ---------------- title ----------------- */
+
+		.title {
+			display: inline-block;
+			margin: 10px 0 0 0;
+			color: #345fa7;
+			font-size: 42px;
+			font-weight: bold;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		/* ---------------- main ----------------- */
+		.main {
+			margin: 0 auto;
+			width: 820px;
+			font-size: 0;
+		}
+		.pic-police,
+		.container {
+			display: inline-block;
+			vertical-align: top;
+		}
+		.pic-police {
+			width: 219px;
+			height: 329px;
+			background-image: url('/public/pic/police.png');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.pic-warning {
+			display: none;
+		}
+		.container {
+			padding: 18px 0 0 40px;
+			width: 561px;
+			font-size: 18px;
+		}
+		.container p {
+			line-height: 1.5;
+
+		}
+		.warning {
+			margin-bottom: 20px;
+			font-size: 42px;
+			font-weight: bold;
+			color: #ff0000;
+		}
+		.msg,
+		.msg-url {
+			margin-bottom: 10px;
+		}
+		.msg-url {
+			font-size: 18px;
+		}
+		.btns {
+			margin-top: 30px;
+			text-align: center;
+			font-size: 0;
+		}
+		.btns div {
+			display: inline-block;
+		}
+		.btns span {
+			font-size: 18px;
+		}
+		.btn {
+			margin: 0 10px;
+			padding: 6px 0;
+			width: 150px;
+			font-size: 18px;
+			line-height: 1;
+			text-align: center;
+			border: 1px solid #20367a;
+			border-radius: 13px;
+			cursor: pointer;
+		}
+		.appeal {
+			margin-left: 10px;
+			color: #20367a;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		#close {
+			background-color: #20367a;
+			color: #fff;
+		}
+		/*#more {
+			display: none;
+		}*/
+		.qrcode {
+			margin-top: 0;
+			width: 820px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 118px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		.qrcode-item {
+			display: inline-block;
+			width: 350px;
+			margin: 0;
+			text-align: center;
+		}
+		.qrcode-item span {
+			margin-top: 10px;
+		}
+		.qrcode-img {
+			display: block;
+			margin: 0 auto;
+		}
+		.qrcode-tips {
+			margin-top: 20px;
+		}
+		.qrcode-mark {
+			display: inline-block;
+			margin-left: 170px;
+		}
+		.tips {
+			width: 820px;
+			margin: 0 auto;
+			margin-top: 10px;
+			padding-left: 118px;
+			box-sizing: border-box;
+		}
+		.tips p {
+			line-height: 40px;
+		}
+
+		@media (max-width : 736px) {
+			.logo {
+				display: block;
+				margin: 1% auto 0;
+				width: 12vw;
+				height: 12.3vw;
+			}
+			.logo:after {
+				content: ' ';
+				position: absolute;
+				top: 15vw;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: #ccc;
+			}
+
+			.pic-police {
+				display: none;
+			}
+			.pic-warning {
+				display: block;
+				float: left;
+				margin: 27px 0 0 5%;
+				/*top: 140px;
+				left: 10%;*/
+				width: 20vw;
+				height: 30vw;
+				background-image: url('/public/pic/police.png');
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+			.title {
+				display: block;
+				margin: 30px auto 0;
+				font-size: 5vw;
+			}
+			.title,
+			.main {
+				box-sizing: border-box;
+				padding: 0;
+				width: 85%;
+			}
+			.main {
+				margin: 0 auto;
+			}
+			.container {
+				display: block;
+				width: 100%;
+    		margin-top: 30px;
+				padding: 0;
+			}
+			.warning {
+				margin-bottom: 30px;
+				padding-left: 20%;
+				font-size: 5vw;
+			}
+			.msg,
+			.msg-url {
+				font-size: 3.2vw;
+			}
+			.msg-url {
+				position: relative;
+				padding-top: 10px;
+			}
+			.msg-url span {
+				word-break: break-all;
+			}
+			.msg-url:before {
+				content: ' ';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: #ccc;
+			}
+			.btns {
+				position: relative;
+				margin-top: 20px;
+				width: 100%;
+				text-align: left;
+			}
+			.btn {
+				margin: 0;
+				padding: 2vw 0;
+				width: 45%;
+				font-size: 3.2vw;
+				border-radius: 0;
+			}
+			#appeal {
+				display: inline-block;
+				width: 45%;
+				margin-top: 2vw;
+				margin-left: 0;
+				text-align: center;
+				font-size: 3.2vw;
+			}
+			#close {
+				margin-right: 2vw;
+			}
+			.tips {
+				width: 85%;
+				margin: 0 auto;
+				margin-top: 20px;
+				padding-left: 0;
+			}
+			.tips p {
+				font-size: 3.2vw;
+				line-height: 1.5;
+			}
+			.qrcode {
+				width: 85%;
+				padding-left: 0;
+				margin-top: 10px;
+			}
+			.qrcode-item {
+				 display: block;
+    		margin: 0 auto;
+				font-size: 3.2vw;
+				line-height: 1.5;
+			}
+			.qrcode-tips {
+				font-size: 3.2vw;
+				line-height: 1.5;
+			}
+			.qrcode-mark {
+				display: block;
+		    margin-left: 0; 
+		    text-align: right;
+		    margin-top: 2vw;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="logo"></div>
+	<div class="pic-warning"></div>
+	<div class="title"><span>广州市公安局天河区分局<span>提示您：</div>
+	<div class="main">
+		<div class="container" id="container">
+			<p class="warning">您访问的网站存在风险！</p>
+			<p class="msg-url">您正在访问：<span id="url">http://www.gdybdj.com/uploads/allimg/190904/1K3152Q2_0.jpg</span></p>
+			<p class="msg">您要访问的网站存在风险，建议您谨慎访问！</p>
+			<p class="msg">如有疑问，请拨打<br/><strong>020-83129018</strong> </p>
+			<div class="btns">
+				<div id="close" class="btn">关闭页面</div>
+				<div id="skip-box" class="btn">
+					<div id="skip">继续访问(不推荐)</div>
+				</div>
+				<span class="appeal" id="appeal">站长申诉</span>
+			</div>
+		</div>
+		<div class="pic-police"></div>
+	</div>
+	<div class="tips">
+		<p></p>
+		<p>请扫描二维码，关注广州天河公安公众号</p>
+	</div>
+	<div class="qrcode">
+		<!-- <div class="qrcode-item">
+			<img src="//3gimg.qq.com/tele_safe/safeurl/zhongjiezhapian.png" width="130"/>
+			<span>公众号：终结诈骗</span>
+		</div> -->
+		<div class="qrcode-item">
+			<img class="qrcode-img" src="//3gimg.qq.com/tele_safe/safeurl/qrcode_gzthga.jpg" width="130"/>
+			<span>公众号：广州天河公安</span>
+		</div>
+		<div class="qrcode-tips">
+			请将公众号分享给亲友，共筑安全和谐天河！
+			<span class="qrcode-mark">广州市公安局天河区分局</span>
+		</div>
+	</div>
+  <script type="text/javascript">
+    var token     = "5d79e7c84b4da51a" || '';
+    var msg       = "";
+    var areaid       = "440110";
+    var url       = "http://www.gdybdj.com/uploads/allimg/190904/1K3152Q2_0.jpg";
+    var isBan     = "0";
+    var isDelay   = "0";
+    var redirectUrl      = "";
+    var receptRedirect      = "";
+    // 判断是否有跳转
+		if(redirectUrl && receptRedirect != '2') {
+			location.href = redirectUrl + location.search + '&r=2'
+    }
+  </script>
+  <script type="text/javascript" src="/public/js/intercept.js" ></script>
+</body>
+</html>

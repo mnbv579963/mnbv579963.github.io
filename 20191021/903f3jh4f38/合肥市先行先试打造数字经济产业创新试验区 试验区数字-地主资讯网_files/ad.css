@@ -1,0 +1,34 @@
+﻿/*���ֹ��*/
+.yl_side_chan{border: 1px solid #EBEBEB; width:298px; height:154px;}
+.yl_side_chanCon{padding: 5px 10px;}
+.yl_side_sogou ul {padding-top: 5px;}
+.yl_side_chanCon ul {overflow: hidden; list-style-type:none; margin:0; padding:0;}
+.yl_side_chanCon li {list-style-type:none;background: url(../images/dot3x3.png) 0 10px no-repeat;font-size: 12px;height: 24px;line-height: 24px;overflow: hidden;padding: 0 0 0 10px; margin:0;}
+.yl_side_chanCon li a{ color:#004276; text-decoration:none; font-size:13px;}
+.yl_side_chanCon li a:hover{ color:#F00; text-decoration:underline;}
+
+/*ͼ�Ĺ��*/
+.yg_body{ font-family:'����'; margin:0; padding:0;}
+.yg_guanggaowei{ border:1px solid #CCC; width:288px; padding-bottom:10px; padding-left:10px;}
+.yg_gghbaio{ font-size:14px; line-height:24px; padding:4px 0; width:298px; text-align:left; margin:0;color:#004276 !important;}
+.yg_gghbaio:hover{color:#F60 !important;}
+.yg_ggbiaoti{ font-size:14px; line-height:20px; margin-top:-24px;opacity:0.5;filter:alpha(opacity=50);-moz-opacity=0.95;opacity:0.5;z-index:100; background:#000; color:#FFF; text-align:center;height:20px;font-weight:bold;overflow:hidden;
+}
+.yg_ggtu{ float:left; overflow:hidden; width:132px; overflow:hidden;} 
+.yg_ggneirong{ float:left; margin-left:10px; width:140px; overflow:hidden}
+.yg_ggneirong li{ line-height:22px; list-style-type:none;height:22px; /* width:132px; */ overflow:hidden;background:url("../images/dot3x3.png") no-repeat scroll 0px 10px transparent;padding-left:5px;}<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script language="javascript" src="/ad.js"></script>
